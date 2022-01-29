@@ -26,12 +26,17 @@ counter = 0
 # '//'와 '%'를 사용한다면!
 while True:
     a = X//10
+    # 두자리 수가 나올경우 10의 자리 숫자 분리
     b = X % 10
+    # 두자리 수가 나올경우 1의 자리 숫자 분리
     R = a + b
     c = int(b*10 + R % 10)
     X = c
     counter += 1
     if N == c:
         break
+
+# while 문의 좀더 다양한 사용방법에 대해서 공부해보아야겠다.
+
 
 print(counter)
